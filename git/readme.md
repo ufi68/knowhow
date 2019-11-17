@@ -26,6 +26,8 @@ git add .
 git status
 
 git commit -m "Update git readme.md"
+
+git pull
 ```
 
 

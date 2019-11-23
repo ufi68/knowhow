@@ -48,6 +48,21 @@ Variable             ShouldProcess                                     {Variable
 PS>  Get-command
 ```
 
+## Get availabe Methods and Variables for an command / Object 
+```
+PS> Get-date | get-member
+
+   TypeName: System.DateTime
+
+Name                 MemberType     Definition
+----                 ----------     ----------
+...
+DayOfYear            Property       int DayOfYear {get;}
+...
+PS C:\Users\xxx> (Get-date).DayofYear
+327
+```
+
 # Powershell on Linux
 
 ```

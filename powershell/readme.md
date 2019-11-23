@@ -63,6 +63,30 @@ PS C:\Users\xxx> (Get-date).DayofYear
 327
 ```
 
+## Pipleine 
+```
+- ForEach-Object
+- Group-Object
+- Measure-Object 
+- Select-Object
+- Sort-Object
+- Tee-Object
+- Where-Object
+
+Example
+PS> Get-service | where-Object {$_.Status -eq "Running"}
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  AdobeARMservice    Adobe Acrobat Update Service
+Running  AMD External Ev... AMD External Events Utility
+...
+```
+
+
+
+
+
 # Powershell on Linux
 
 ```

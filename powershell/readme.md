@@ -71,7 +71,7 @@ PS C:\Users\xxx> (Get-date).DayofYear
 - Select-Object
 - Sort-Object
 - Tee-Object
-- Where-Object
+- Where-Object (actual Object = $_)
 
 Example
 PS> Get-service | where-Object {$_.Status -eq "Running"}
@@ -82,10 +82,6 @@ Running  AdobeARMservice    Adobe Acrobat Update Service
 Running  AMD External Ev... AMD External Events Utility
 ...
 ```
-
-
-
-
 
 # Powershell on Linux
 

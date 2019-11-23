@@ -47,3 +47,9 @@ Variable             ShouldProcess                                     {Variable
 ```
 PS>  Get-command
 ```
+
+# Powershell on Linux
+
+```
+$ pwsh -v 
+```

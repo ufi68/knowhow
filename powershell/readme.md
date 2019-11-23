@@ -75,6 +75,8 @@ PS C:\Users\xxx> (Get-date).DayofYear
 
 Example
 PS> Get-service | where-Object {$_.Status -eq "Running"}
+or
+PS> Get-service | where Status -eq "Running"
 
 Status   Name               DisplayName
 ------   ----               -----------

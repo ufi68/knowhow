@@ -93,6 +93,18 @@ PS> "{0:yyyyMMdd}" -f (Get-Date) + "_" + "{0:hhmmss}" -f (Get-Date)
 20191124_050309
 ```
 
+## Format
+```
+> Get-childItem | ForEach-Object {"{0,-30}:{1,10} Bytes" -f $_.Name, $_.Length}
+.config                       :         1 Bytes
+.dlv                          :         1 Bytes
+.gitconfig                    :       312 Bytes
+archive.db                    :      1536 Bytes
+dataout.csv                   :        53 Bytes
+test2.db                      :     73728 Bytes
+test_file_1.txt               :     85329 Bytes
+```
+
 # Powershell on Linux
 
 ```

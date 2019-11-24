@@ -85,6 +85,14 @@ Running  AMD External Ev... AMD External Events Utility
 ...
 ```
 
+## Date / Time 
+
+### Date/Time Stamp
+```
+PS> "{0:yyyyMMdd}" -f (Get-Date) + "_" + "{0:hhmmss}" -f (Get-Date)
+20191124_050309
+```
+
 # Powershell on Linux
 
 ```

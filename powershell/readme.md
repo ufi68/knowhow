@@ -101,7 +101,7 @@ PS> "{0:yyyyMMdd}" -f (Get-Date) + "_" + "{0:hhmmss}" -f (Get-Date)
 
 ## Format
 ```
-> Get-childItem | ForEach-Object {"{0,-30}:{1,10} Bytes" -f $_.Name, $_.Length}
+PS> Get-childItem | ForEach-Object {"{0,-30}:{1,10} Bytes" -f $_.Name, $_.Length}
 .config                       :         1 Bytes
 .dlv                          :         1 Bytes
 .gitconfig                    :       312 Bytes
@@ -115,4 +115,9 @@ test_file_1.txt               :     85329 Bytes
 
 ```
 $ pwsh -v 
+```
+
+# Install Azure az modules
+```
+PS> Install-Module -Name Az -AllowClobber
 ```

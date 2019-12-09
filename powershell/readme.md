@@ -43,6 +43,12 @@ FileSystem           Filter, ShouldProcess, Credentials                {C, H, E,
 Function             ShouldProcess                                     {Function}
 Variable             ShouldProcess                                     {Variable}
 ```
+
+## Get installed Modules
+``` 
+PS> Get-InstalledModule
+```
+
 ## Get availabe Commands
 ```
 PS>  Get-command

@@ -117,7 +117,10 @@ test_file_1.txt               :     85329 Bytes
 $ pwsh -v 
 ```
 
+
+
 # Install Azure az modules
 ```
+PS> Set-ExecutionPolicy RemoteSigned
 PS> Install-Module -Name Az -AllowClobber
 ```

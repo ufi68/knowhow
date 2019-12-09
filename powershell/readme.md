@@ -123,4 +123,5 @@ $ pwsh -v
 ```
 PS> Set-ExecutionPolicy RemoteSigned
 PS> Install-Module -Name Az -AllowClobber
+PS> Update-Module -Name Az
 ```

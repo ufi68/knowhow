@@ -125,3 +125,21 @@ PS> Set-ExecutionPolicy RemoteSigned
 PS> Install-Module -Name Az -AllowClobber
 PS> Update-Module -Name Az
 ```
+
+# Scripts 
+
+## Named 
+```
+.ps1 
+```  
+
+## Example
+```
+# Import the Azure PowerShell module 
+Import-Module -Name Az
+
+# Connect to Account 
+Connect-AzAccount
+```
+
+```

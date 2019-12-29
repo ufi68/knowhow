@@ -1,4 +1,4 @@
-## Systm and Hardware
+## System and Hardware
 
 | Command  | Explanation |
 | ------------- | ------------- |

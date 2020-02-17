@@ -7,7 +7,28 @@ git config --global user.email johndoe@example.com
 ```
 
 ```
+mkdir ufi68
+cd ufi68
 git clone https://github.com/ufi68/knowhow.git
+cd knowhow
+git status
+
+git remote  --verbose
+
+git branch --list --remote --verbose
+
+git fetch
+
+git branch new_branch
+
+git checkout new_branch
+
+git commit -a -m "Add a commit message"
+
+git push --set-upstream new_branch
+git push -u origin new_branch
+
+git log --oneline --decorate
 ```
 
 ### Update a file / commit / push to GitHub

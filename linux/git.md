@@ -4,7 +4,7 @@ git config --global user.email "e@mail"
 git config --global user.name "user"
 
 mkdir ufi68
-cdufi68
+cd ufi68
 git clone https://github.com/ufi68/knowhow.git
 cd knowhow
 git status

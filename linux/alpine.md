@@ -8,11 +8,10 @@ apk add openssh
 apk add bash
 apk add busybox
 apk add git
+apk add go (not working regardning missing MMX support)
 apk update
 apk upgrade
 uname -a
 uptime
-
-wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz
 
 ``` 

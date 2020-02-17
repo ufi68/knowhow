@@ -7,6 +7,7 @@ hostname -i
 apk add openssh
 apk add bash
 apk add busybox
+apk add git
 apk update
 apk upgrade
 uname -a

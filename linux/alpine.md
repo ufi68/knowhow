@@ -1,6 +1,7 @@
 ## Via Testflight iOS - iSH
 
 ```
+arch (i686)
 hostname
 hostname -i
 apk add openssh

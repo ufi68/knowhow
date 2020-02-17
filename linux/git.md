@@ -3,8 +3,10 @@
 git config --global user.email "e@mail"
 git config --global user.name "user"
 
-git clone https://www.githubcom/xxxxx.git
-
+mkdir ufi68
+cdufi68
+git clone https://github.com/ufi68/knowhow.git
+cd knowhow
 git status
 
 git remote  --verbose

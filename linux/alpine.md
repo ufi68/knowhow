@@ -5,6 +5,8 @@ arch (i686)
 hostname
 hostname -i
 apk add openssh
+apk add bash
+apk add busybox
 apk update
 apk upgrade
 uname -a

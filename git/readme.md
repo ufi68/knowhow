@@ -55,6 +55,10 @@ git status
 git commit -m "Update git readme.md"
 
 git pull
+
+### Commit without extra add files 
+
+git commit -a -m "commit without extra git add . command"
 ```
 
 

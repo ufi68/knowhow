@@ -33,11 +33,13 @@ git log --oneline --decorate
 
 ### initilaize a new repro local
 
+```
 mkdir newDirectory
 cd newDirectory
 git init .
 
 git status
+```
 On branch master
 
 ### Update a file / commit / push to GitHub

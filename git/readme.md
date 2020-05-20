@@ -87,6 +87,10 @@ git blame <file name>
 ```
 git branch
 * master
+
+git branch -av
+(shows remove branches)
 ```
+
 
 

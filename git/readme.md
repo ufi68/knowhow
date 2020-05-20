@@ -61,7 +61,16 @@ git pull
 git commit -a -m "commit without extra git add . command"
 ```
 
+### Show git history
 
+```
+git reflog
+
+git log
+
+git log --graph
+
+```
 
 
 

@@ -78,7 +78,11 @@ git log --oneline --decorate
 git diff <no> HEAD
 ```
 
-## Branche
+```
+git blame <file name>
+```
+
+## Branches
 
 ```
 git branch

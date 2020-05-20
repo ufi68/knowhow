@@ -69,10 +69,14 @@ git reflog
 git log
 
 git log --graph
-
 ```
 
+## diff changes 
 
+```
+git log --oneline --decorate
+git diff <no> HEAD
+```
 
 
 

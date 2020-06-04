@@ -6,6 +6,14 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
+### Store Credentials permanent in Linux / macOS us
+
+```
+git config --global credential.helper cache
+```
+
+### Clone repro localy from remote 
+
 ```
 mkdir ufi68
 cd ufi68

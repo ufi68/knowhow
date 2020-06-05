@@ -100,5 +100,10 @@ git branch -av
 (shows remove branches)
 ```
 
+## Git and WSL
 
-
+To set up Git Credential Manager for use with a WSL distribution, open your distribution and enter this command:
+https://docs.microsoft.com/en-us/windows/wsl/faq
+```
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
+```

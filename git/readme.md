@@ -98,6 +98,11 @@ git branch
 
 git branch -av
 (shows remove branches)
+
+git switch <existing branch> git fetch 
+
+git switch -c <new branch to create> 
+
 ```
 
 ## Tags

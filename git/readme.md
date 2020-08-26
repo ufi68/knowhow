@@ -100,6 +100,14 @@ git branch -av
 (shows remove branches)
 ```
 
+## Tags
+
+
+```
+git ls-remote --tags origin
+
+```
+
 ## Git and WSL
 
 To set up Git Credential Manager for use with a WSL distribution, open your distribution and enter this command:

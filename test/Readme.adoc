@@ -1,5 +1,12 @@
 = Ultimative Dokumentation 
 
+:toc-title: Inhaltsverzeichnis 
+:toc:
+:icons: font
+
 Einfacher Text 
 
 == Level 2
+
+// Comment 
+[[sec:section1]]

@@ -10,12 +10,12 @@ Einfacher Text
 
 // Comment 
 
-== Code Convetions 
 [[sec:code-conventions]]
+== Code Convetions 
 
 .Beispielcode
 [source,go]
----
+----
 package main
 
 import "fmt"
@@ -23,5 +23,16 @@ import "fmt"
 func main() {
     fmt.Println("hello world")
 }
----
+----
 
+<1> Liste 1
+<2> Liste 2
+
+[[sec:code-review]]
+== Code-Review
+
+. Liste 
+. Liste n
+. Liste nn
+
+NOTE: Diese Notiz ist extrem wichtig 

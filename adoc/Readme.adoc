@@ -44,3 +44,13 @@ NOTE: Diese Notiz ist extrem wichtig
 |Thema 1 
 |Text dazu
 |Noch mehr Text halt 
+|=== 
+
+== Reference to Code
+
+[source,go,indent=0]
+----
+include::HelloWorld.go[tag=PrintlnHelloWorld]
+----
+
+

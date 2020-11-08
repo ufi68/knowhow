@@ -12,5 +12,5 @@ func main() {
 	currentTime := time.Now()
 
 	// printing the date and time in string format
-	fmt.Println("Current Time in String: ", currentTime.String())
+	fmt.Println("Current Time: ", currentTime.String())
 }

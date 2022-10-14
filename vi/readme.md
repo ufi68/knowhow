@@ -202,8 +202,46 @@ J             zwei Zeilen zusammenfügen
 nJ            n Zeilen zusammenfügen
 ```
 
+#### Globales Suchen und Ersetzen von Text
+```
+:m,ns/str1/str2/    von Zeile m bis Zeile n wird str1 durch str2 ersetzt
+:m,ns/str1/str2/g   von Zeile m bis Zeile n werden alle str1 durch str2 ersetzt
+&                   das letzte :s-Kommando wird wiederholt
 
+:g/str/cmd          cmd wird für alle Zeilen ausgeführt, die str enthalten
+:v/str/cmd          cmd wird für alle Zeilen ausgeführt, die str nicht enthalten
+```
 
+#### Suchen im Text
+```
+fchar         vorwärts suchen von char in der aktuellen Zeile
+Fchar         rückwärts suchen von char in der aktuellen Zeile
+/str<RET>     vorwärts suchen von str ab der aktuellen Zeile
+?str<RET>     rückwärts suchen von str ab der aktuellen Zeile
+n             nächstes Muster (vorwärts) suchen
+```
+
+####  Shellkommandos
+```
+:!cmd         Kommando cmd wird der Shell zur Ausführung übergeben
+:r !cmd       Kommando cmd wird ausgeführt und Ergebnis hinter der aktuellen Zeile eingefügt
+```
+
+#### Vi-Optionen
+Durch das Belegen von vi-Optionen (Kommando :set) mit einem Wert oder das Setzen von Optionen kann die Arbeitsweise des Editors beeinflusst werden. Die Kommandos set können in ein File mit dem Namen $HOME/.exrc eingetragen werden, das bei jedem vi-Editoraufruf abgearbeitet wird.
+```
+:set all       Anzeige Belegung aller Optionen
+
+:set number          Zeilennummern anzeigen
+:set nonumber        Zeilennummern nicht anzeigen
+:set ignorecase      beim Suchen soll nicht zwischen Groß- und Kleinbuchstaben unterschieden werden
+:set noignorecase    beim Suchen soll zwischen Groß- und Kleinbuchstaben unterschieden werden
+:set showmatch bei   Eingabe einer schließenden Klammer wird die dazugehörige öffnende Klammer angezeigt
+:set noshowmatch     keine Klammernprüfung
+:set autoindent      automatische Einrückung
+:set noautoindent    keine automatische Einrückung
+:set wrapmargin=n    ab n Zeichen vor Zeilenende wird automatisch an einer Wortgrenze getrennt und eine neue Zeile begonnen
+```
 
 ## Links 
 https://itler.net/linux-editor-vi-befehle-in-der-bersicht/

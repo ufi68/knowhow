@@ -59,11 +59,15 @@ Argumente:
    ```
    
 ## Modi 
+
+Wechsel mit `<ESC>`
    
 ### Kommandozeilen-Modus 
 ```   
 :w - Speichern 
+:w <filename> - Speichern als Datei <filename>
 :q - Beenden 
+:q! - Beenden ohne Änderungen zu speichern 
 ```
    
 ### Befehlsmodus 

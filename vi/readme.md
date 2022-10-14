@@ -71,20 +71,143 @@ Wechsel mit `<ESC>`
 ```
    
 ### Befehlsmodus 
+https://www-user.tu-chemnitz.de/~hot/VIM/vi.html
 
 #### Text eingeben
+```
 a - Text nach dem Cursor einfügen
 A - Text am Ende der Zeile einfügen
 i - Text vor dem Cursor einfügen
 I - Text am Anfang der Zeile einfügen
 o - unter dem Cursor Leerzeile für Texteingabe eröffnen
 O - über dem Cursor Leerzeile für Texteingabe eröffnen
+:r file - file lesen und nach der aktuellen Zeile einfügen
+:nr file - file lesen und nach der n-ten Zeile einfügen
+``` 
 
-  
-### Einfügemodus 
-   
+#### Rollen und Ausrichten des Bildschirminhaltes
+```
+<CTRL>-f      eine Seite vorwärts rollen
+<CTRL>-b      eine Seite rückwärts rollen
+<CTRL>-d      eine halbe Seite vorwärts rollen
+<CTRL>-u      eine halbe Seite rückwärts rollen
+
+z <RET>       aktuelle Zeile wird oberste Zeile
+              des Bildschirms
+z.            aktuelle Zeile wird zur mittlere Zeile
+z-            aktuelle Zeile wird zur untersten Zeile
+```  
+
+#### Bewegen des Cursors in einem File
+```  
+h oder <--     Cursor nach links bewegen
+l oder -->     Cursor nach rechts bewegen
+j              Cursor nach unten bewegen
+k              Cursor nach oben bewegen
+$              Cursor zum Ende der aktuellen Zeile bewegen
+0 (Null)       Cursor zum Anfang der aktuellen Zeile bewegen
+^              Cursor zum ersten sichtbaren Zeichen der aktuellen Zeile bewegen
+tchar          Cursor vor erstes Zeichen char bewegen
+ntchar         Cursor vor n-tes Zeichen char bewegen
+
+w              Cursor zum Anfang des nächsten Wortes bewegen
+W              Cursor zum Anfang des nächsten Wortes bewegen
+               (ohne Berücksichtigung von Sonderzeichen)
+b              Cursor zum Anfang des vorhergehenden Wortes bewegen
+B              Cursor zum Anfang des vorhergehenden Wortes bewegen (ohne Berücksichtigung von Sonderzeichen)
+e              Cursor zum Ende des nächsten Wortes bewegen
+E              Cursor zum Ende des nächsten Wortes bewegen
+               (ohne Berücksichtigung von Sonderzeichen)
+ 
+H              Cursor auf oberste Zeile des Bildschirms
+M              Cursor auf mittlere Zeile des Bildschirms
+L              Cursor auf unterste Zeile des Bildschirms
+1G oder gg     Cursor auf 1. Zeile im File bewegen
+nG             Cursor auf n-te Zeile im File bewegen
+G              Cursor auf letzte Zeile im File bewegen
+n+             Cursor n Zeilen vorwärts bewegen
+n-             Cursor n Zeilen rückwärts bewegen
+
+(              Cursor zum Anfang des Satzes bewegen
+)              Cursor zum Anfang des nächsten Satzes bewegen
+{              Cursor zum Anfang des Absatzes bewegen
+}              Cursor zum Anfang des nächsten Absatzes bewegen
+% (auf {}[]()) Cursor auf zugehörende Klammer bewegen
+```  
+
+#### Text löschen
+Im vi-Kommandomodus:
+```
+x             durch Cursor markiertes Zeichen löschen
+nx            n Zeichen ab Cursor löschen
+dd            aktuelle Zeile löschen
+ndd           die nächsten n Zeilen löschen (einschl. der aktuellen)
+dw            aktuelles Wort löschen (vom Cursor bis Wortende)
+dW            aktuelles Wort einschl. Sonderzeichen löschen
+ndw           n Wörter ab markiertem Wort löschen
+db            vorhergehendes Wort löschen
+dB            vorhergehendes Wort einschl. Sonderzeichen löschen
+ndb           n Wörter vor dem Cursor löschen
+d$ oder D     aktuelle Zeile vom Cursor bis Zeilenende löschen
+d0 (Null)     aktuelle Zeile vom Cursor bis Zeilenanfang löschen
+dcursor_cmd   Text vom Cursor bis zu der durch cursor_cmd bestimmten Stelle löschen
+:m,nd         Zeilen m bis n löschen
+```
+
+Im vi-Eingabemodus:
+```
+<CTRL>-h oder Backspace  vorhergehendes Zeichen löschen
+<CTRL>-w                 vorhergehendes Wort löschen
+<CTRL>-u                 alle eingebenen Zeichen der aktuellen Zeile komplett löschen
+```
+
+#### Ändern von Text
+```
+rchar              aktuelles Zeichen durch char ersetzen
+Rtext              aktuelle(s) Zeichen durch text ersetzen
+stext              aktuelles Zeichen durch text ersetzen
+Stext oder cctext  aktuelle Zeile durch text ersetzen
+cwtext             aktuelles Wort durch text ersetzen
+ncwtext            n Wörter ab Cursor durch text ersetzen
+Ctext              aktuelle Zeile von Cursor bis Zeilenende durch text ersetzen
+ccursor_cmd text   Text von Cursor bis cursor_cmd durch text ersetzen
+~                  aktueller Buchstabe wird in Groß- bzw. Kleinbuchstabe umgewandelt
+n~                 n Buchstaben ab Cursor in Groß- bzw. Kleinbuchstaben umwandeln
+.                  letztes Kommando wiederholen
+```
+
+#### Änderungen zurücksetzen
+```
+u             zuletzt ausgeführten Befehl rückgängig machen
+U             Zustand der aktuellen Zeile vor der Änderung herstellen
+:q!           vi-Sitzung ohne Sicherung der Änderung verlassen
+```
+
+#### Text kopieren oder verschieben
+```
+Y oder yy     aktuelle Zeile zwischenspeichern
+nY oder nyy   n Zeilen ab Cursor zwischenspeichern
+ycursor_cmd   Text von Cursor bis cursor_cmd zwischenspeichern
+
+dd            aktuelle Zeile löschen
+ndd           n Zeilen ab Cursor löschen
+dcursor_cmd   Text von Cursor bis cursor_cmd löschen
+
+p             gelöschten oder zwischengespeicherten Text hinter (oder unter) dem Cursor einfügen
+P             gelöschten oder zwischengespeicherten Text vor (oder über) dem Cursor einfügen
+
+xp            zwei Zeichen vertauschen
+
+J             zwei Zeilen zusammenfügen
+nJ            n Zeilen zusammenfügen
+```
+
+
+
+
 ## Links 
 https://itler.net/linux-editor-vi-befehle-in-der-bersicht/
+
 https://www-user.tu-chemnitz.de/~hot/VIM/vi.html
 
    

@@ -71,7 +71,20 @@ Wechsel mit `<ESC>`
 ```
    
 ### Befehlsmodus 
+
+#### Text eingeben
+a - Text nach dem Cursor einfügen
+A - Text am Ende der Zeile einfügen
+i - Text vor dem Cursor einfügen
+I - Text am Anfang der Zeile einfügen
+o - unter dem Cursor Leerzeile für Texteingabe eröffnen
+O - über dem Cursor Leerzeile für Texteingabe eröffnen
+
   
 ### Einfügemodus 
    
+## Links 
+https://itler.net/linux-editor-vi-befehle-in-der-bersicht/
+https://www-user.tu-chemnitz.de/~hot/VIM/vi.html
+
    

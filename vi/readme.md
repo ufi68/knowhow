@@ -221,9 +221,9 @@ Fchar         rückwärts suchen von char in der aktuellen Zeile
 n             nächstes Muster (vorwärts) suchen
 ```
 
-## Multible Windows
+## Mehrere Fenster
 
-#### From command line 
+#### Ccommand line 
 ```
 $ vim -o file1.txt file2.txt
 ```
@@ -239,6 +239,16 @@ All vim windows related commands begin with `<Ctrl>-w`
 
 :vsplit             Split vertical
 ```
+
+#### Falten 
+```
+[count]zf           Erstellen einer Faltung[count]
+zC                  Schließen einer Faltung
+zO                  Öffnen einer Faltung 
+zD                  Löschen einer Faltung
+```
+
+
 
 ####  Shellkommandos
 ```

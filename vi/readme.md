@@ -243,6 +243,25 @@ Durch das Belegen von vi-Optionen (Kommando :set) mit einem Wert oder das Setzen
 :set wrapmargin=n    ab n Zeichen vor Zeilenende wird automatisch an einer Wortgrenze getrennt und eine neue Zeile begonnen
 ```
 
+## ex 
+Commands outside vi 
+
+### Example 
+``` 
+$ vi HelloWorld.txt
+Hallo Welt
+:wq
+
+$ vi HelloWorld.ex
+%s/Hallo/Hello/g
+%s/Welt/World/g
+:wq
+
+$ ex -s HelloWorld.txt < HelloWorld.ex
+$ cat HelloWorld.txt
+Hello World
+``` 
+
 ## Links 
 https://itler.net/linux-editor-vi-befehle-in-der-bersicht/
 

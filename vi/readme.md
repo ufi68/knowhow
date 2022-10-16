@@ -229,10 +229,16 @@ $ vim -o file1.txt file2.txt
 ```
 #### Split Windows inside vi
 All vim windows related commands begin with `<Ctrl>-w`
+```
+<Ctrl>-w s          Split Horizontal 
+<Ctrl>-w <Ctrl>-w   Jump to next Window (toggle)
+<Ctrl>-w <Ctrl>-j   Jump to Window down
+<Ctrl>-w <Ctrl>-k   Jump to Window up
+<Ctrl>-w <Ctrl>-l   Jump to Window right
+<Ctrl>-w <Ctrl>-w   Jump to Window left
 
-`<Ctrl>-w s`        Split Horizontal 
-`<Ctrl>-w <Ctrl>-w` Jump to next Window 
-`:vsplit`           Split vertical
+:vsplit             Split vertical
+```
 
 ####  Shellkommandos
 ```

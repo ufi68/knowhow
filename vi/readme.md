@@ -221,6 +221,19 @@ Fchar         rückwärts suchen von char in der aktuellen Zeile
 n             nächstes Muster (vorwärts) suchen
 ```
 
+## Multible Windows
+
+#### From command line 
+```
+$ vim -o file1.txt file2.txt
+```
+#### Split Windows inside vi
+All vim windows related commands begin with `<Ctrl>-w`
+
+`<Ctrl>-w s`        Split Horizontal 
+`<Ctrl>-w <Ctrl>-w` Jump to next Window 
+`:vsplit`           Split vertical
+
 ####  Shellkommandos
 ```
 :!cmd         Kommando cmd wird der Shell zur Ausführung übergeben
@@ -253,6 +266,7 @@ Hallo Welt
 :wq
 
 $ vi HelloWorld.ex
+" Change from German to Englisch words
 %s/Hallo/Hello/g
 %s/Welt/World/g
 :wq

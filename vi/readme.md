@@ -251,6 +251,9 @@ zE                  Löschen ALLER Faltungen
 
 :mkview             Speichern der Faltungen zwischen Sessions 
 :loadview           Laden der Faltungen einer gespeicherten Session 
+(wird in $HOME/.vim/view gespeichert)
+
+foldmethod          Option (manual, syntax ...)   
 ```
 
 ####  Shellkommandos

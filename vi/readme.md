@@ -243,12 +243,15 @@ All vim windows related commands begin with `<Ctrl>-w`
 #### Falten 
 ```
 [count]zf           Erstellen einer Faltung[count]
+zf                  Erstellen einer Faltung von der aktuellen Zeile bis zu der bewegungs corsor (oder /search kommando)  
 zC                  Schließen einer Faltung
 zO                  Öffnen einer Faltung 
 zD                  Löschen einer Faltung
+zE                  Löschen ALLER Faltungen 
+
+:mkview             Speichern der Faltungen zwischen Sessions 
+:loadview           Laden der Faltungen einer gespeicherten Session 
 ```
-
-
 
 ####  Shellkommandos
 ```

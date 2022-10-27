@@ -236,6 +236,7 @@ All vim windows related commands begin with `<Ctrl>-w`
 <Ctrl>-w <Ctrl>-k   Jump to Window up
 <Ctrl>-w <Ctrl>-l   Jump to Window right
 <Ctrl>-w <Ctrl>-w   Jump to Window left
+<Ctrl>-w q          Cancel Split 
 
 :vsplit             Split vertical
 ```

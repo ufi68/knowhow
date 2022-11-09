@@ -204,6 +204,7 @@ nJ            n Zeilen zusammenfügen
 
 #### Globales Suchen und Ersetzen von Text
 ```
+:%s/str1/str2/g     in der gesammten Datei wird str1 durch str2 ersetzt
 :m,ns/str1/str2/    von Zeile m bis Zeile n wird str1 durch str2 ersetzt
 :m,ns/str1/str2/g   von Zeile m bis Zeile n werden alle str1 durch str2 ersetzt
 &                   das letzte :s-Kommando wird wiederholt

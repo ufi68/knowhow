@@ -2,6 +2,9 @@ package main
 
 // go get github.com/vjeantet/eastertime
 
+// Alternative - use
+// https://github.com/rickar/cal
+
 import (
 	"fmt"
 	"time"
@@ -41,6 +44,15 @@ func isEaster(date time.Time) bool {
 // return false if the weekday in the time object is a Saturday or an Sunday, otherwise true
 func isWeekday(date time.Time) bool {
 	if date.Weekday() != time.Saturday && date.Weekday() != time.Sunday {
+		return true
+	}
+	return false
+}
+
+// Create a function that takes a date and returns true if the date is a weekend, false otherwise
+// Hint: use the time.Weekday() function
+func isWeekend(date time.Time) bool {
+	if date.Weekday() == time.Saturday || date.Weekday() == time.Sunday {
 		return true
 	}
 	return false

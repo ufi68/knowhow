@@ -67,11 +67,38 @@ func TestIsWeekday(t *testing.T) {
 	for _, tt := range tests {
 		testname := fmt.Sprintf("%d,%d,%d", tt.year, tt.month, tt.day)
 		t.Run(testname, func(t *testing.T) {
-			testdate := time.Date(tt.year, time.Month(tt.month), tt.day, 0, 0, 0, 0, time.UTC)
-			result := isWeekday(testdate)
+			result := isWeekday(time.Date(tt.year, time.Month(tt.month), tt.day, 0, 0, 0, 0, time.UTC))
 			if result != tt.want {
 				t.Errorf("got %t, want %t", result, tt.want)
 			}
 		})
 	}
+}
+
+// create a test for the isWeekend() function with multible itteration
+func TestIsWeekend(t *testing.T) {
+	var tests = []struct {
+		year, month, day int
+		want             bool
+	}{
+
+		{2023, 4, 30, true},  // Sunday
+		{2023, 8, 19, true},  // Saturday
+		{2023, 8, 18, false}, // Friday
+		{2023, 8, 17, false}, // Thursday
+		{2023, 8, 16, false}, // Wednesday
+		{2023, 8, 15, false}, // Tuesday
+		{2023, 8, 14, false}, // Monday
+
+	}
+	for _, tt := range tests {
+		testname := fmt.Sprintf("%d,%d,%d", tt.year, tt.month, tt.day)
+		t.Run(testname, func(t *testing.T) {
+			result := isWeekend(time.Date(tt.year, time.Month(tt.month), tt.day, 0, 0, 0, 0, time.UTC))
+			if result != tt.want {
+				t.Errorf("got %t, want %t", result, tt.want)
+			}
+		})
+	}
+
 }
